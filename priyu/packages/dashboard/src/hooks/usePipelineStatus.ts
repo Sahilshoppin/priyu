@@ -19,7 +19,10 @@ interface PipelineStatus {
         timestamp: string;
         error?: string;
     }>;
-    supabaseSchema?: unknown;
+    supabaseSchema?: {
+        tables: Array<{ name: string; columns: Array<{ name: string; type: string; nullable: boolean; isPrimaryKey?: boolean }> }>;
+        policies: Array<{ name: string; table: string; operation: string; expression: string }>;
+    } | null;
     stitchOutput?: unknown;
     startedAt?: string;
     completedAt?: string;

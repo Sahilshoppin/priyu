@@ -1,6 +1,7 @@
 {
     "name": "priyu",
     "version": "1.0.0",
+    "type": "module",
     "description": "Priyu — AI-Powered App Factory CLI",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",

@@ -1,6 +1,7 @@
 {
     "name": "@priyu/mcp-server",
     "version": "1.0.0",
+    "type": "module",
     "description": "Priyu MCP gateway — exposes app factory tools for any AI IDE",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
