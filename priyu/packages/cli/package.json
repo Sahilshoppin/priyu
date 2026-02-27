@@ -1,0 +1,28 @@
+{
+    "name": "priyu",
+    "version": "1.0.0",
+    "description": "Priyu — AI-Powered App Factory CLI",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "bin": {
+        "priyu": "./dist/bin/priyu.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "clean": "rm -rf dist"
+    },
+    "dependencies": {
+        "commander": "^12.1.0",
+        "inquirer": "^9.3.0",
+        "ora": "^8.1.0",
+        "chalk": "^5.3.0",
+        "@google/generative-ai": "^0.21.0",
+        "@priyu/core": "*"
+    },
+    "devDependencies": {
+        "typescript": "^5.7.0",
+        "@types/node": "^22.0.0",
+        "@types/inquirer": "^9.0.0"
+    }
+}

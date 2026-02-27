@@ -1,0 +1,24 @@
+{
+    "name": "@priyu/mcp-server",
+    "version": "1.0.0",
+    "description": "Priyu MCP gateway — exposes app factory tools for any AI IDE",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "bin": {
+        "priyu-mcp": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "clean": "rm -rf dist"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.12.1",
+        "zod": "^3.23.0",
+        "@priyu/core": "*"
+    },
+    "devDependencies": {
+        "typescript": "^5.7.0",
+        "@types/node": "^22.0.0"
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "priyu-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Priyu — AI-Powered App Factory",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:core": "npm run build -w @priyu/core",
+    "build:mcp": "npm run build -w @priyu/mcp-server",
+    "build:cli": "npm run build -w priyu",
+    "build:dashboard": "npm run build -w @priyu/dashboard",
+    "dev:dashboard": "npm run dev -w @priyu/dashboard",
+    "clean": "rm -rf packages/*/dist packages/*/node_modules node_modules",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "prettier": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
